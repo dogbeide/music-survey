@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="en" />
+    <meta charset="UTF-8" />
+    <title>Music Review Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Music Review Survey</h1>
+    <p id="description">
+      Heard our new EP? Tell us how it was!
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"for="name">Name 
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="email">Email 
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label" for="number">Age (optional) 
+          <input id="number" type="number" min="0" max="150" placeholder="Age" />
+        </label>
+        <label>Where are you from?  
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">North America</option>
+            <option value="2">South America</option>
+            <option value="3">Europe</option>
+            <option value="4">Asia</option>
+            <option value="5">Africa</option>
+            <option value="6">Australia</option>
+            <option value="7">Antarctica</option>
+          </select>
+        </label>
+        
+        <label class="group"> How was it overall? 
+            <label><input name="rating" type="radio" value="0"/> trash</label>
+            <label><input name="rating" type="radio" value="1"/> Meh</label>
+            <label><input name="rating" type="radio" value="2" /> Good</label>
+            <label><input name="rating" type="radio" value="3" /> Awesome</label>
+            <label><input name="rating" type="radio" value="4" /> Timeless</label>
+        </label>
+
+        <label class="group">Which songs were your favorites? 
+            <label><input name="song-intro" type="checkbox" value="1"> Intro</label>
+            <label><input name="song-2" type="checkbox" value="2"> Song 2</label>
+            <label><input name="song-interlude" type="checkbox" value="3"> interlude</label>
+            <label><input name="song-freestyle" type="checkbox" value="4"> freestyle</label>
+            <label><input name="song-outro" type="checkbox" value="5"> Outro</label>
+        </label>
+
+        <label class="group">What was it like? Tell us more...
+            <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Your experience..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
